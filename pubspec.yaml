@@ -1,6 +1,6 @@
 name: app_exceptions
 description: A starting point for Dart libraries or applications.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/cedvdb/dart_app_exceptions
 environment:
   sdk: '>=2.14.0 <3.0.0'

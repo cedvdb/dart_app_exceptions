@@ -54,20 +54,20 @@ class InvalidInputException extends AppException {
 
 /// thrown when an user is unauthorized to do an action
 class UnauthorizedException extends AppException {
-  UnauthorizedException({
+  const UnauthorizedException({
     String description = 'You do not have the necessary permission',
   }) : super('Unauthorized', description);
 }
 
 /// thrown when a resource was not found
 class NotFoundException extends AppException {
-  NotFoundException({String description = 'Resource could not be found'})
+  const NotFoundException({String description = 'Resource could not be found'})
       : super('Not Found', description);
 }
 
 /// thrown when an action was cancelled before finishing
 class ActionCancelledException extends AppException {
-  ActionCancelledException({
+  const ActionCancelledException({
     String description = 'Action was cancelled before being processed',
   }) : super('Action cancelled', description);
 }
